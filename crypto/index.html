@@ -1,0 +1,50 @@
+<html>
+<title>Pay with Crypto</title>
+<body bgcolor="#2a2a2a">
+<marquee class="marq">This address will expire in 10minutes.</marquee>
+<img style="display:block;margin-left:auto;margin-right:auto;width:30%;padding:5%;" src="./img/xlogo_white.png">
+<h1 style="font-family:consolas;text-align:center;color:white;">Click to copy the bitcoin address</h1>
+<center><input type=button id="myInput" onclick="myFunction()" value="1TyW95qad5Ab7nD2ZJLtY2f1wPLMC4Pgg" style="background-color:#FF6A00;color:white;width:20%;border-width:1px;"></center>
+</body>
+<style>
+  .marq {
+    font-family: consolas;
+    color: red;
+  }
+    #mainForm {
+        font-family: consolas;
+        color: white;
+        text-align: center;
+        line-height: 25px;
+        transform: translate(-4%);
+    }
+    label{
+        display:inline-block;
+        width:200px;
+        margin-right:30px;
+        text-align:right;
+    }
+    .input {
+        font-family: consolas;
+        background-color: #505050;
+        color: white;
+        width: 20%;
+    }
+    fieldset{
+        border:none;
+        width:100%;
+        margin:0px auto;
+    }
+    .g-recaptcha {
+        display: inline-block;
+    }
+</style>
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Copied!");
+}
+</script>
+</html>
